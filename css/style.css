@@ -1,0 +1,29 @@
+/********************
+*		Navbar
+********************/
+#navbar-white
+{
+	background-color: #fff;
+	z-index: 9999;
+
+}
+/* Themes list elements */
+#navbar-white .navbar-nav > li > a
+{
+	color: #566473;
+    font-size: 14px;
+    font-weight: 600;
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#navbar-white .navbar-nav > li > a:hover
+{
+	background-color: #F1F4F9;
+}
+
+/* Sets navbar collapse button 'hamburger menu' to black*/
+.icon-bar
+{
+	background-color: black !important;
+}

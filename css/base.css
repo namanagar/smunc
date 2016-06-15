@@ -1,0 +1,27 @@
+body
+{
+  padding-top:70px;
+  background-color: #F1F4F9;
+}
+.navbar-fixed-top .nav
+{
+  padding:15px 0;
+}
+
+.navbar-fixed-top .navbar-brand
+{
+  padding:0 15px;
+}
+/* Desktop only Formatting */
+@media (min-width: 768px)
+{
+  body
+  {
+    padding-top:100px;
+  }
+  
+  .navbar-fixed-top .navbar-brand
+  {
+    padding: 15px 0;
+  }
+}
