@@ -1,9 +1,11 @@
+var words=[]
+
 $(function()
 {
 	var timer = setInterval(function()
 	{
-		$('#scroll').addClass('slideInDown');
+		$('#scroll').text(words[Math.floor(Math.random()*words.length)] +".");
     	
-	},5000);
+	},10000); //10000 ms = 10 s
     
 });
