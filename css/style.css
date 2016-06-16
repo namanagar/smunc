@@ -1,8 +1,58 @@
+/* * * * * * * * * * *
+ * Global
+ * * * * * * * * */
 body {
   padding-top: 70px;
   background-color: #F1F4F9;
   font-family: "Raleway", sans-serif; }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #566473;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 15px; }
+
+p {
+  color: #566473;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-align: justify; }
+
+.custom-container, .accent-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.accent-container {
+  background-color: #006137;
+  margin-bottom: 45px; }
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none; }
+
+.icon-row {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap; }
+  .icon-row i, .icon-row h2, .icon-row p {
+    color: white; }
+  .icon-row i {
+    font-size: 5em;
+    line-height: 100px; }
+  .icon-row p {
+    text-align: center;
+    font-family: "Helvetica", sans-serif;
+    font-weight: 300; }
+  .icon-row .logo-text-pair {
+    padding-top: 20px;
+    flex-grow: 1;
+    max-width: 250px; }
+
+/* * * * * * * * * * *
+ * End Global
+ * * * * * * * * */
 /* * * * * * * * * * *
  * Navbar
  * * * * * * * * */
@@ -51,62 +101,39 @@ body {
  * /* * * * * * * * * * *
  * Front Page
  * * * * * * * * */
-h1, h2, h3 {
-  color: #566473;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 800; }
-
-h1 {
+#welcome-section h1 {
   font-size: 2.5em;
   margin-bottom: 15px; }
   @media (min-width: 768px) {
-    h1 {
+    #welcome-section h1 {
       font-size: 3.5em; } }
-
-p {
-  color: #566473;
-  font-size: 1.5em;
-  font-weight: 600;
-  margin-bottom: 50px;
-  text-align: justify; }
+#welcome-section p {
+  margin-bottom: 50px; }
 
 #myCarousel {
   margin-bottom: 100px;
-  width: 45%;
+  width: 55%;
   margin: auto; }
 
-.carousel-control.left, .carousel-control.right {
-  background-image: none; }
-
-.blue {
-  background-color: #2eaef0; }
-
-.custom-container, .accent-container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto; }
-
-.accent-container {
-  background-color: #006137;
-  margin-bottom: 45px; }
-
-#icon-row {
-  text-align: center;
+/* * * * * * * * * * *
+ * End Front Page
+ * * * * * * * * */
+/* * * * * * * * * * *
+ * About Page
+ * * * * * * * * */
+#profile-col {
   display: flex;
-  justify-content: space-around;
-  flex-flow: row wrap; }
-  #icon-row i, #icon-row h2, #icon-row p {
-    color: white; }
-  #icon-row i {
-    font-size: 5em;
-    line-height: 100px; }
-  #icon-row p {
-    text-align: center;
-    font-family: "Helvetica", sans-serif;
-    font-weight: 300;
-    margin-bottom: 15px; }
-  #icon-row .logo-text-pair {
-    padding-top: 20px;
-    flex-grow: 1;
-    max-width: 250px; }
+  flex-flow: column nowrap;
+  justify-content: space-around; }
+  #profile-col h3 {
+    font-size: 1.35em;
+    line-height: 15px; }
+  #profile-col .profile-pair {
+    margin-bottom: 30px; }
+    #profile-col .profile-pair img {
+      float: left;
+      width: 35%;
+      height: auto; }
+    #profile-col .profile-pair p {
+      text-align: center;
+      font-size: 1em; }

@@ -1,13 +1,68 @@
+/* * * * * * * * * * *
+ * Global
+ * * * * * * * * * */
 $font-stack: 'Raleway', sans-serif
 $background-color: #F1F4F9
 $background-accent-color: #006137
 $min-desktop-size: 768px
 $text-color: #566473
+
 body
-	//border: 5px solid red
 	padding-top: 70px
 	background-color: $background-color
 	font-family: $font-stack
+
+h1, h2, h3, h4, h5, h6
+	color: $text-color
+	text-align: center
+	text-transform: uppercase
+	font-weight: 800
+	margin-bottom: 15px
+
+p
+	color: $text-color
+	font-weight: 600
+	font-size: 1.5em
+	text-align: justify
+
+.custom-container
+	width: 100%
+	margin-left: auto
+	margin-right: auto
+
+.accent-container
+	@extend .custom-container
+	background-color: $background-accent-color
+	margin-bottom: 45px
+
+.carousel-control
+	&.left, &.right
+		background-image: none
+
+.icon-row
+	text-align: center
+	display: flex
+	justify-content: space-around
+	flex-flow: row wrap
+	i, h2, p
+		color: white
+	i
+		font-size: 5em
+		line-height: 100px
+	p
+		text-align: center
+		font-family: 'Helvetica', sans-serif
+		font-weight: 300
+
+	.logo-text-pair
+		padding-top: 20px
+		flex-grow: 1
+		max-width: 250px
+/* * * * * * * * * * *
+ * End Global
+ * * * * * * * * * */
+
+
 /* * * * * * * * * * *
  * Navbar
  * * * * * * * * * */
@@ -60,71 +115,41 @@ body
  /* * * * * * * * * * *
  * Front Page
  * * * * * * * * * */
-h1, h2, h3
-	color: $text-color
-	text-align: center
-	text-transform: uppercase
-	font-weight: 800
-h1
-	font-size: 2.5em
-	margin-bottom: 15px
-	@media (min-width: $min-desktop-size)
-		font-size: 3.5em
-p
-	color: $text-color
-	font-size: 1.5em
-	font-weight: 600
-	margin-bottom: 50px
-	text-align: justify
+#welcome-section
+	h1
+		font-size: 2.5em
+		margin-bottom: 15px
+		@media (min-width: $min-desktop-size)
+			font-size: 3.5em
+	p
+		margin-bottom: 50px
 
 #myCarousel
 	margin-bottom: 100px
-	width: 45%
+	width: 55%
 	margin: auto
 
-.carousel-control
-	&.left, &.right
-		background-image: none
+/* * * * * * * * * * *
+ * End Front Page
+ * * * * * * * * * */
 
-.blue
-	background-color: #2eaef0
-
-.custom-container
-	width: 100%
-	margin-left: auto
-	margin-right: auto
-
-.accent-container
-	@extend .custom-container
-	background-color: $background-accent-color
-	margin-bottom: 45px
-
-#icon-row
-	text-align: center
+/* * * * * * * * * * *
+ * About Page
+ * * * * * * * * * */
+#profile-col
+	h3
+		font-size: 1.35em
+		line-height: 15px
 	display: flex
+	flex-flow: column nowrap
 	justify-content: space-around
-	flex-flow: row wrap
-	i,h2, p
-		color: white
-	i
-		font-size: 5em
-		line-height: 100px
-	p
-		text-align: center
-		font-family: 'Helvetica', sans-serif
-		font-weight: 300
-		margin-bottom: 15px
 
-	.logo-text-pair
-		padding-top: 20px
-		flex-grow: 1
-		max-width: 250px
-
-
-
-
-
-
-
-
-
+	.profile-pair
+		margin-bottom: 30px
+		img
+			float: left
+			width: 35%
+			height: auto
+		p
+			text-align: center
+			font-size: 1em
