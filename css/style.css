@@ -112,8 +112,11 @@ p {
 
 #myCarousel {
   margin-bottom: 100px;
-  width: 55%;
+  width: 100%;
   margin: auto; }
+  @media (min-width: 768px) {
+    #myCarousel {
+      width: 40%; } }
 
 /* * * * * * * * * * *
  * End Front Page
