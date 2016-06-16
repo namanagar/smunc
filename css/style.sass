@@ -3,13 +3,17 @@ $background-color: #F1F4F9
 $navbar-item-color: #566473
 $navbar-item-font: 14px
 $navbar-item-weight: 600
+$min-desktop-size: 768px
+$text-color: #566473
 
 body
 	padding-top: 70px
 	background-color: $background-color
 	font-family: $font-stack
 
-
+/* * * * * * * * * * *
+ * Navbar
+ * * * * * * * * * */
 #navbar-white
 	background-color: white
 	z-index: 9999
@@ -22,3 +26,98 @@ body
 				outline: none
 				text-decoration: none
 				text-transform: uppercase
+				&:hover
+					background-color: $background-color
+		.open
+			a
+				background-color: $background-color
+.navbar-fixed-top
+	.nav
+		padding: 15px 0
+	.navbar-brand
+		padding: 0 15px
+		@media (min-width: $min-desktop-size)
+			padding: 15px 0
+.icon-bar
+	background-color: black !important
+
+.dropdown-menu
+	box-shadow: none
+
+	li
+		a
+			color: $navbar-item-color !important
+			font-size: $navbar-item-font
+			font-weight: $navbar-item-weight
+			padding: 10px 20px
+			outline: none
+			text-decoration: none
+			text-transform: uppercase
+/* * * * * * * * * * *
+ * End Navbar
+ * * * * * * * * * */
+ 
+
+ /* * * * * * * * * * *
+ * Front Page
+ * * * * * * * * * */
+h1
+	color: $text-color
+	font-size: 3.5em
+	text-align: center
+	text-transform: uppercase
+	font-weight: 800
+	margin-bottom: 15px
+p
+	color: $text-color
+	font-size: 1.5em
+	font-weight: 600
+	text-align: justify
+	margin-bottom: 50px
+
+#myCarousel
+	margin-bottom: 100px
+	width: 100%
+
+.carousel-control
+	&.left, &.right
+		background-image: none
+
+.blue
+	background-color: #2eaef0
+
+#first-section
+	width: 100%
+
+#second-section
+	width: 100%
+	background-color: #2eaef0
+	text-align: center
+	margin-bottom: 40px
+
+	i
+		color: white
+		font-size: 5em
+		line-height: 100px
+
+	h2
+		color: white
+
+.logo-text
+	display: flex
+	flex-direction: column
+	text-align: center
+
+.logo-text-pair
+	padding-top: 20px
+	padding-bottom: 20px
+	flex-grow: 1
+
+/* Desktop only Formatting */
+@media (min-width: 768px)
+	.logo-text
+		flex-direction: row
+
+	.logo-text-pair
+		padding-top: 0px
+		padding-bottom: 0px
