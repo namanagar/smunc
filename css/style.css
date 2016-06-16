@@ -11,7 +11,10 @@ body
 *	End General
 ********************/
 
-
+.active
+{
+	
+}
 #navbar-white
 {
 	background-color: #fff;
