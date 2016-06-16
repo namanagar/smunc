@@ -3,7 +3,7 @@
  * * * * * * * * */
 body {
   padding-top: 70px;
-  background-color: #F1F4F9;
+  background-color: #F2f7f4;
   font-family: "Raleway", sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -68,7 +68,7 @@ p {
     text-decoration: none;
     text-transform: uppercase; }
     #navbar-white .navbar-nav li a:hover {
-      background-color: #F1F4F9; }
+      background-color: #F2f7f4; }
   #navbar-white .navbar-nav .open a {
     background-color: white; }
 
