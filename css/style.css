@@ -109,11 +109,61 @@ p
   text-align: justify;
   margin-bottom: 50px;
 }
-
 #myCarousel
 {
   margin-bottom: 100px;
 }
 .carousel-control.left, .carousel-control.right {
     background-image: none
+}
+.blue 
+{
+  background-color: #2eaef0
+}
+#first-section
+{
+  width: 100%;
+}
+#second-section
+{
+  width: 100%;
+  background-color: #2eaef0;
+  text-align: center;
+
+}
+#second-section i
+{
+  color: white;
+  font-size: 5em;
+  line-height: 100px;
+}
+#second-section h2
+{
+  color: white;
+}
+.logo-text
+{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+.logo-text-pair
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-grow: 1;
+}
+/* Desktop only Formatting */
+@media (min-width: 768px)
+{
+  .logo-text
+  {
+    flex-direction: row;
+  }
+  .logo-text-pair
+  {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
