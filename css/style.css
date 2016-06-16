@@ -1,6 +1,17 @@
 /********************
-*		Navbar
+*		General
 ********************/
+body
+{
+  padding-top:70px;
+  background-color: #F1F4F9;
+  font-family: 'Raleway', sans-serif;
+}
+/********************
+*	End General
+********************/
+
+
 #navbar-white
 {
 	background-color: #fff;
@@ -21,9 +32,75 @@
 {
 	background-color: #F1F4F9;
 }
+#navbar-white .navbar-nav> .open >a
+{
+	background-color: #F1F4F9;
+}
+.navbar-fixed-top .nav
+{
+  padding:15px 0;
+}
+
+.navbar-fixed-top .navbar-brand
+{
+  padding:0 15px;
+}
+/* Desktop only Formatting */
+@media (min-width: 768px)
+{
+  body
+  {
+    padding-top:100px;
+  }
+  
+  .navbar-fixed-top .navbar-brand
+  {
+    padding: 15px 0;
+  }
+}
 
 /* Sets navbar collapse button 'hamburger menu' to black*/
 .icon-bar
 {
 	background-color: black !important;
+}
+/* Themes drop-down menus */
+.dropdown-menu
+{
+	box-shadow: none;
+}
+.dropdown-menu > li > a
+{
+    color: #566473 !important;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 20px;
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+/********************
+*	   End Navbar
+********************/
+
+
+/********************
+* Front Page Content
+********************/
+
+h1
+{
+	color: #566473;
+	font-size: 3.5em;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 800;
+	margin-bottom: 30px;
+}
+p
+{
+	color: #566473;
+	font-size: 1.2em;
+	font-weight: 600;
 }
