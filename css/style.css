@@ -22,7 +22,9 @@ p {
 .custom-container, .accent-container {
   width: 100%;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px; }
 
 .accent-container {
   width: 100%;
