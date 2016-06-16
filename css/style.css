@@ -17,14 +17,17 @@ p {
   color: #566473;
   font-weight: 600;
   font-size: 1.5em;
-  text-align: justify; }
+  text-align: center; }
+  @media (min-width: 768px) {
+    p {
+      text-align: justify; } }
 
 .custom-container, .accent-container {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 50px;
-  padding-right: 50px; }
+  padding-left: 25px;
+  padding-right: 25px; }
 
 .accent-container {
   width: 100%;
@@ -106,7 +109,8 @@ p {
  * * * * * * * * */
 #welcome-section h1 {
   font-size: 2.5em;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  margin: 0 auto; }
   @media (min-width: 768px) {
     #welcome-section h1 {
       font-size: 3.5em; } }
