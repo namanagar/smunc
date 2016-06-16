@@ -25,6 +25,7 @@ p {
   margin-right: auto; }
 
 .accent-container {
+  width: 100%;
   background-color: #006137;
   margin-bottom: 45px; }
 
@@ -111,12 +112,12 @@ p {
   margin-bottom: 50px; }
 
 #myCarousel {
-  margin-bottom: 100px;
   width: 100%;
-  margin: auto; }
+  margin: auto;
+  margin-bottom: 50px; }
   @media (min-width: 768px) {
     #myCarousel {
-      width: 40%; } }
+      width: 60%; } }
 
 /* * * * * * * * * * *
  * End Front Page
