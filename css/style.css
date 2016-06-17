@@ -146,8 +146,10 @@ p {
     margin-bottom: 30px; }
     #profile-col .profile-pair img {
       float: left;
-      width: 35%;
+      width: 25%;
       height: auto; }
     #profile-col .profile-pair p {
       text-align: center;
       font-size: 1em; }
+
+/*# sourceMappingURL=style.css.map */
