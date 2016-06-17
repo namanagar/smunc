@@ -2,8 +2,9 @@
  * Global
  * * * * * * * * * */
 $font-stack: 'Raleway', sans-serif
-$background-color: #F2f7f4
+$background-color: #fffdfc
 $background-accent-color: #006137
+$highlight-color: #F1F4F9
 $min-desktop-size: 768px
 $text-color: #566473
 
@@ -78,14 +79,14 @@ p
 		li
 			a
 				text-align: right
-				color: #566473
+				color: $text-color
 				font-size: 14px
 				font-weight: 600
 				outline: none
 				text-decoration: none
 				text-transform: uppercase
 				&:hover
-					background-color: $background-color
+					background-color: $highlight-color
 		.open
 			a
 				background-color: white
@@ -103,14 +104,13 @@ p
 	box-shadow: none
 	li
 		a
-			color: #566473 !important
+			color: $text-color !important
 			font-size: 14px
 			font-weight: 600
 			padding: 10px 20px
 			outline: none
 			text-decoration: none
 			text-transform: uppercase
-
 .active
 
 /* * * * * * * * * * *
