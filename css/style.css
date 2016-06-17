@@ -22,6 +22,9 @@ p {
     p {
       text-align: justify; } }
 
+.text-center {
+  text-align: center; }
+
 .custom-container, .accent-container {
   width: 100%;
   margin-left: auto;
